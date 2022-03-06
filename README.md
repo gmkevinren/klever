@@ -1,10 +1,15 @@
 # klever
 klever-blockchain-validators-program
 Websites:
+
 https://klever.finance/klever-blockchain-validators-program/
+
 https://docs.klever.finance/
+
 https://twitter.com/klever_io
+
 https://discord.gg/klever-io
+
 
 **1. Introduction**
 1. What is Klever
