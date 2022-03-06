@@ -32,6 +32,7 @@ On top of that, a customized version of the Practical Byzantine Fault Tolerance 
 •  Linux or MacOS. 
 
 **3.Setup node:**
+
 #Install Docker and download the latest Klever Toolchain image.
 
 docker pull kleverapp/klever-go-testnet:latest
