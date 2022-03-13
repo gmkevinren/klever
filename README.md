@@ -161,10 +161,11 @@ ufw allow 9090/tcp
 ufw allow 9100/tcp
 ```
 #check statistics and metrics:
->
+```
 http://yournodeip:8080/node/statistics
-http://yournodip:8080/node/metrics
 
+http://yournodip:8080/node/metrics
+```
 #monitor node with Grafana+Prometheus+node_exporter
 
 #Setup grafana
@@ -241,6 +242,7 @@ sudo systemctl restart node_exporter
 sudo systemctl status node_exporter
 ```
 #modify prometheus.yml
+```
 cd
 cd prometheus-2.34.0-rc.0.linux-amd64
 mv prometheus.yml prometheus_old.yml
