@@ -60,7 +60,7 @@ docker run -it --rm --user "$(id -u):$(id -g)" \
 ```
 mkdir -p $(pwd)/node/config $(pwd)/node/db $(pwd)/node/logs
 #Download config file:
-curl -k https://backup.testnet.klever.finance/config.testnet.100007.tar.gz \
+curl -k https://backup.testnet.klever.finance/config.testnet.100008.tar.gz \
     | tar -xz -C ./node
 ```
 #Create node key
@@ -74,7 +74,16 @@ docker run -it --rm -v $(pwd)/node/config:/opt/klever-blockchain \
 curl -k https://backup.testnet.klever.finance/kleverchain.latest.tar.gz \
     | tar -xz -C ./node
 ```
-#Run node with UI
+#Run node with UI (use screen here):
+for the first time,create a screen:
+
+```
+screen -S klever
+```
+or later,just restore the Klever screen :
+```
+screen -x klever
+```
 ```
 docker run -it --rm \
     --user "$(id -u):$(id -g)" \
@@ -265,7 +274,7 @@ click left side "Configuration" icon and "data sources" and prometheus,then inpu
 #click “+” icon and “import” ,”Upload JSON file” and choose the json file you just download
  
 ** # finish monitor **
-## ** Fill the phase one feedback form  **
+###### 5. Fill the phase one feedback form  **
 >https://forms.gle/VgsQX2ba8iMvXUK77
  
 
